@@ -1,0 +1,23 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Serene mountain landscape with morning mist",
+      "imageUrl": "https://picsum.photos/seed/soul-hero/1920/1080",
+      "imageHint": "serene mountains"
+    },
+    {
+      "id": "villa-bogor",
+      "description": "Private luxury villa in Bogor with lush greenery",
+      "imageUrl": "https://picsum.photos/seed/soul-villa/1000/1000",
+      "imageHint": "luxury villa"
+    },
+    {
+      "id": "mountain-mist",
+      "description": "Close up of mountain mist and greenery",
+      "imageUrl": "https://picsum.photos/seed/soul-mist/1000/1000",
+      "imageHint": "mountain mist"
+    }
+  ]
+}

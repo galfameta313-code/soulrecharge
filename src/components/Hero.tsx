@@ -15,7 +15,7 @@ export function Hero() {
     <header className="relative h-screen min-h-[700px] flex items-center justify-center text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
-          src={heroImage?.imageUrl || "https://picsum.photos/seed/soul-hero/1920/1080"}
+          src={heroImage?.imageUrl || "/hero.jpeg"}
           alt="Retreat Background"
           fill
           priority

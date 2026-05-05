@@ -37,7 +37,7 @@ export function LocationSection() {
         <div className="order-1 md:order-2 relative">
           <div className="rounded-sm overflow-hidden shadow-2xl">
             <Image 
-              src={mistImage?.imageUrl || "https://picsum.photos/seed/soul-mist/1000/1000"} 
+              src={mistImage?.imageUrl || "/mist.jpeg"} 
               alt="Mountain Mist" 
               width={1000}
               height={1000}

@@ -1,13 +1,41 @@
-
 "use client";
 
 import { useState } from "react";
-import { generateReflectionPrompts, type GenerateReflectionPromptsOutput } from "@/ai/flows/generate-reflection-prompts";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Loader2, Sparkles, Send } from "lucide-react";
-import { cn } from "@/lib/utils";
+
+type GenerateReflectionPromptsOutput = {
+  reflectionQuestions: string[];
+  journalingPrompts: string[];
+};
+
+const predefinedReflectionQuestions = [
+  "Apa satu hal yang paling menguras energi Anda saat ini, dan mengapa Anda masih membiarkannya?",
+  "Jika Anda tidak harus membuktikan apa-apa kepada siapa pun, apa yang akan Anda ubah dari cara Anda bekerja?",
+  "Di bagian mana dalam hidup Anda, Anda merasa sedang 'berlari' tetapi tidak tahu menuju ke mana?",
+  "Apa ketakutan terbesar yang diam-diam menahan Anda untuk mengambil langkah selanjutnya?",
+  "Seberapa sering Anda mendengarkan intuisi Anda akhir-akhir ini dibandingkan dengan ekspektasi orang lain?",
+  "Kapan terakhir kali Anda merasa benar-benar damai dan cukup dengan diri Anda sendiri?",
+  "Jika masalah yang Anda hadapi saat ini adalah seorang guru, apa pelajaran utama yang sedang ia coba sampaikan?",
+  "Apa satu kebiasaan atau pola pikir yang sudah saatnya Anda lepaskan demi ketenangan batin Anda?"
+];
+
+const predefinedJournalingPrompts = [
+  "Tuliskan 3 hal yang Anda syukuri hari ini, sekecil apapun itu, dan jelaskan mengapa hal tersebut bermakna.",
+  "Bayangkan diri Anda 5 tahun dari sekarang telah berhasil melewati tantangan ini. Apa nasihat yang akan 'diri Anda di masa depan' berikan kepada Anda saat ini?",
+  "Gambarkan sebuah hari ideal di mana Anda merasa sepenuhnya seimbang antara pekerjaan, istirahat, dan kehidupan pribadi. Apa yang Anda lakukan di hari itu?",
+  "Tulis sebuah surat singkat berisi permintaan maaf dan pengampunan untuk diri Anda sendiri atas tekanan yang selama ini Anda pikul.",
+  "Jika Anda memiliki tongkat ajaib dan bisa mengubah satu hal dalam rutinitas harian Anda besok, apakah itu, dan bagaimana perasaan Anda setelah mengubahnya?",
+  "Buat daftar 5 hal yang membuat Anda merasa 'hidup' dan bersemangat. Bagaimana Anda bisa memasukkan satu dari hal tersebut ke dalam minggu Anda?",
+  "Jelaskan sebuah momen di mana Anda merasa gagal, lalu temukan setidaknya dua hal positif atau kekuatan baru yang Anda peroleh dari pengalaman tersebut."
+];
+
+function getRandomElements(arr: string[], count: number) {
+  const shuffled = [...arr].sort(() => 0.5 - Math.random());
+  return shuffled.slice(0, count);
+}
 
 export function GenAIPromptTool() {
   const [challenges, setChallenges] = useState("");
@@ -20,14 +48,17 @@ export function GenAIPromptTool() {
     if (!challenges || !aspirations) return;
 
     setLoading(true);
-    try {
-      const output = await generateReflectionPrompts({ challenges, aspirations });
-      setResult(output);
-    } catch (error) {
-      console.error("Error generating prompts:", error);
-    } finally {
+    
+    // Simulate AI processing delay (1.5 - 2.5 seconds)
+    const delay = Math.floor(Math.random() * 1000) + 1500;
+    
+    setTimeout(() => {
+      setResult({
+        reflectionQuestions: getRandomElements(predefinedReflectionQuestions, 3),
+        journalingPrompts: getRandomElements(predefinedJournalingPrompts, 3),
+      });
       setLoading(false);
-    }
+    }, delay);
   };
 
   return (
@@ -40,7 +71,7 @@ export function GenAIPromptTool() {
           </div>
           <h2 className="text-3xl md:text-5xl italic font-headline mb-6">Clarify Your Intentions</h2>
           <p className="text-primary/60 max-w-2xl mx-auto">
-            Gunakan AI asisten kami untuk mendapatkan pertanyaan refleksi personal sebelum retret dimulai.
+            Gunakan asisten refleksi kami untuk mendapatkan panduan pertanyaan personal sebelum retret dimulai.
           </p>
         </div>
 

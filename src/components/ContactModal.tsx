@@ -51,12 +51,12 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             </a>
 
             <a 
-              href="https://instagram.com/soulrecharge.id" 
+              href="https://instagram.com/kembangjiwaorganizer" 
               target="_blank"
               className="flex items-center justify-center gap-3 text-primary/40 text-[10px] uppercase font-bold tracking-widest mt-4 hover:text-primary transition-colors"
             >
               <Instagram className="w-3 h-3" />
-              @soulrecharge.id
+              @kembangjiwaorganizer
             </a>
           </div>
 

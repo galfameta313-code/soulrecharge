@@ -43,7 +43,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             </a>
             
             <a 
-              href="mailto:hello.soulrecharge7@gmail.com?subject=Tanya%20Mengenai%20Kembang%20Jiwa%20Organizer"
+              href="mailto:kembangjiwaorganizer@gmail.com?subject=Tanya%20Mengenai%20Kembang%20Jiwa%20Organizer"
               className="flex items-center justify-center gap-3 border border-primary/20 text-primary py-4 font-bold uppercase text-[10px] tracking-[0.2em] rounded-sm hover:bg-primary/5 transition-all"
             >
               <Mail className="w-4 h-4" />

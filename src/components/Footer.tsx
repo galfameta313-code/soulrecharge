@@ -30,7 +30,7 @@ export function Footer() {
             <p className="text-[10px] opacity-40 font-bold tracking-[0.3em] uppercase">Contact Channels</p>
             <div className="flex flex-col gap-4 text-sm font-medium">
               <a href="https://wa.me/6282111594146" target="_blank" className="hover:text-gold transition-colors opacity-80">+62 821-1159-4146 (WhatsApp)</a>
-              <a href="mailto:hello.soulrecharge7@gmail.com" className="hover:text-gold transition-colors opacity-80">hello.soulrecharge7@gmail.com</a>
+              <a href="mailto:kembangjiwaorganizer@gmail.com" className="hover:text-gold transition-colors opacity-80">kembangjiwaorganizer@gmail.com</a>
               <a href="https://instagram.com/kembangjiwaorganizer" target="_blank" className="hover:text-gold transition-colors opacity-80">Instagram: @kembangjiwaorganizer</a>
             </div>
           </div>

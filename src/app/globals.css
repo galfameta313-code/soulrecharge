@@ -5,25 +5,25 @@
 
 @layer base {
   :root {
-    --background: 120 7% 95%; /* Mint Beige #F0F3F0 */
-    --foreground: 130 39% 14%; /* Darker Forest Green */
+    --background: 40 20% 97%; /* Soft pale gold/beige */
+    --foreground: 166 45% 15%; /* Deep Green */
     --card: 0 0% 100%;
-    --card-foreground: 130 39% 14%;
+    --card-foreground: 166 45% 15%;
     --popover: 0 0% 100%;
-    --popover-foreground: 130 39% 14%;
-    --primary: 130 39% 20%; /* Forest Green #1F4726 */
-    --primary-foreground: 120 7% 98%;
-    --secondary: 102 40% 50%; /* Green Accent #6CB34D */
+    --popover-foreground: 166 45% 15%;
+    --primary: 345 60% 25%; /* Burgundy */
+    --primary-foreground: 40 20% 97%;
+    --secondary: 166 45% 15%; /* Deep Green */
     --secondary-foreground: 0 0% 100%;
-    --muted: 130 10% 90%;
-    --muted-foreground: 130 10% 40%;
-    --accent: 102 40% 90%;
-    --accent-foreground: 130 39% 20%;
+    --muted: 40 10% 90%;
+    --muted-foreground: 166 20% 40%;
+    --accent: 40 48% 56%; /* Gold */
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 130 10% 85%;
-    --input: 130 10% 85%;
-    --ring: 130 39% 20%;
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 345 60% 25%;
     --radius: 0.25rem;
   }
 }
@@ -42,7 +42,7 @@
 }
 
 .hero-overlay {
-  background: linear-gradient(rgba(31, 71, 38, 0.6), rgba(31, 71, 38, 0.3));
+  background: linear-gradient(rgba(21, 55, 44, 0.7), rgba(21, 55, 44, 0.4));
 }
 
 .glass-card {

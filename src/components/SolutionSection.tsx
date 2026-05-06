@@ -11,7 +11,7 @@ export function SolutionSection() {
         <div className="md:w-1/2 relative">
           <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl">
             <Image 
-              src={villaImage?.imageUrl || "/vila.jpeg"} 
+              src={villaImage?.imageUrl || "/villa.jpeg"} 
               alt="Private Villa Bogor" 
               width={1000}
               height={1000}

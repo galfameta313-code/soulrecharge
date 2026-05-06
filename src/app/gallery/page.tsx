@@ -3,7 +3,7 @@ import { Footer } from "@/components/Footer";
 
 export default function GalleryPage() {
   const images = [
-    "/Gallery/kegiatan1.png",
+    "/Gallery/Kegiatan 1.jpeg",
     "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=1000&auto=format&fit=crop", 
     "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop", 
     "https://images.unsplash.com/photo-1536623975707-c4b3b2af565d?q=80&w=1000&auto=format&fit=crop", 

@@ -15,11 +15,11 @@ export function Footer() {
           <div className="max-w-xs">
             <div className="flex items-center gap-3 mb-4">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/logo.jpeg" alt="Soul Recharge Logo" className="w-10 h-10 rounded-full object-cover" />
-              <h3 className="serif text-4xl font-bold italic">Soul Recharge</h3>
+              <img src="/logo.jpeg" alt="Kembang Jiwa Organizer Logo" className="w-10 h-10 rounded-full object-cover" />
+              <h3 className="serif text-4xl font-bold italic">Kembang Jiwa Organizer</h3>
             </div>
             <p className="text-[10px] opacity-40 uppercase tracking-[0.3em] mb-8 font-bold">
-              The Clarity Retreat Experience
+              Titik Temu Jiwa Berkembang
             </p>
             <p className="text-sm opacity-60 leading-relaxed">
               Sebuah perjalanan spiritual yang dirancang khusus untuk memulihkan kejernihan pikiran dan kesadaran diri.
@@ -47,7 +47,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between gap-4 text-[10px] font-bold uppercase tracking-[0.2em] opacity-30">
-          <div>&copy; 2024 Soul Recharge. All Rights Reserved.</div>
+          <div>&copy; 2024 Kembang Jiwa Organizer. All Rights Reserved.</div>
           <div className="flex gap-6">
             <span>Bogor, Indonesia</span>
             <span>Est. 2024</span>

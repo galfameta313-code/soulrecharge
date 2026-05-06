@@ -11,7 +11,7 @@ export function SolutionSection() {
         <div className="md:w-1/2 relative">
           <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl">
             <Image 
-              src={villaImage?.imageUrl || "/villa.jpeg"} 
+              src={villaImage?.imageUrl || "/vila.jpeg"} 
               alt="Private Villa Bogor" 
               width={1000}
               height={1000}
@@ -27,7 +27,7 @@ export function SolutionSection() {
           <span className="text-gold uppercase tracking-[0.3em] text-[10px] font-bold mb-6">The Solution</span>
           <h2 className="text-4xl md:text-5xl mb-8 italic font-headline">This is Where You Reset</h2>
           <p className="text-lg text-primary/80 mb-10 leading-relaxed">
-            Soul Recharge bukan sekadar liburan. Ini adalah ruang sakral untuk berhenti sejenak, melepas kebisingan, dan kembali menemukan pusat diri Anda.
+            Kembang Jiwa Organizer bukan sekadar liburan. Ini adalah ruang sakral untuk berhenti sejenak, melepas kebisingan, dan kembali menemukan pusat diri Anda.
           </p>
           
           <ul className="space-y-6 mb-12">

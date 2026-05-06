@@ -3,7 +3,7 @@ import './globals.css';
 import { Protection } from '@/components/Protection';
 
 export const metadata: Metadata = {
-  title: 'Soul Recharge | The Clarity Retreat',
+  title: 'Kembang Jiwa Organizer | Titik Temu Jiwa Berkembang',
   description: 'A private retreat experience for professionals & business owners seeking clarity, purpose, and inner alignment.',
 };
 

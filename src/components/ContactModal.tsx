@@ -34,7 +34,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           
           <div className="flex flex-col gap-4">
             <a 
-              href="https://wa.me/6282111594146?text=Halo%20Tim%20Soul%20Recharge%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20mengenai%20Clarity%20Retreat." 
+              href="https://wa.me/6282111594146?text=Halo%20Tim%20Kembang%20Jiwa%20Organizer%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20mengenai%20Titik%20Temu%20Jiwa%20Berkembang." 
               target="_blank" 
               className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 font-bold uppercase text-[10px] tracking-[0.2em] rounded-sm hover:brightness-110 transition-all shadow-md"
             >
@@ -43,7 +43,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             </a>
             
             <a 
-              href="mailto:hello.soulrecharge7@gmail.com?subject=Tanya%20Mengenai%20Soul%20Recharge%20Retreat"
+              href="mailto:hello.soulrecharge7@gmail.com?subject=Tanya%20Mengenai%20Kembang%20Jiwa%20Organizer"
               className="flex items-center justify-center gap-3 border border-primary/20 text-primary py-4 font-bold uppercase text-[10px] tracking-[0.2em] rounded-sm hover:bg-primary/5 transition-all"
             >
               <Mail className="w-4 h-4" />
@@ -61,7 +61,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           </div>
 
           <p className="text-[9px] mt-12 opacity-30 uppercase tracking-[0.3em]">
-            Soul Recharge &mdash; Bogor, Indonesia
+            Kembang Jiwa Organizer &mdash; Bogor, Indonesia
           </p>
         </div>
       </div>

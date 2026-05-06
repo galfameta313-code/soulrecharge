@@ -25,7 +25,7 @@ export default function GalleryPage() {
           <p className="text-gold font-bold tracking-[0.3em] uppercase text-xs mb-6">Visual Journey</p>
           <h1 className="serif text-5xl md:text-7xl font-bold italic mb-8">Moments of Clarity</h1>
           <p className="text-lg opacity-80 max-w-2xl mx-auto leading-relaxed">
-            Sekilas pandang ke dalam pengalaman Soul Recharge. Kumpulan memori dari perjalanan spiritual, pemulihan, dan kebersamaan.
+            Sekilas pandang ke dalam pengalaman Kembang Jiwa Organizer. Kumpulan memori dari perjalanan spiritual, pemulihan, dan kebersamaan.
           </p>
         </div>
 

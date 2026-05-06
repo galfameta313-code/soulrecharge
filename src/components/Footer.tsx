@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { ContactModal } from "./ContactModal";
+import Link from "next/link";
 
 export function Footer() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -33,9 +34,9 @@ export function Footer() {
           <div className="space-y-6">
             <p className="text-[10px] opacity-40 font-bold tracking-[0.3em] uppercase">Quick Links</p>
             <div className="flex flex-col gap-4 text-sm font-medium">
-              <a href="#problem" className="hover:text-gold transition-colors opacity-80">The Need</a>
-              <a href="#solution" className="hover:text-gold transition-colors opacity-80">The Escape</a>
-              <a href="#experience" className="hover:text-gold transition-colors opacity-80">The Journey</a>
+              <Link href="/#problem" className="hover:text-gold transition-colors opacity-80">The Need</Link>
+              <Link href="/#solution" className="hover:text-gold transition-colors opacity-80">The Escape</Link>
+              <Link href="/#experience" className="hover:text-gold transition-colors opacity-80">The Journey</Link>
               <button onClick={() => setModalOpen(true)} className="text-gold font-bold uppercase text-left">Reserve Spot</button>
             </div>
           </div>

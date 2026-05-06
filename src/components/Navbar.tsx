@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { ContactModal } from "./ContactModal";
+import Link from "next/link";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,17 +28,18 @@ export function Navbar() {
           isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm py-4 text-primary" : "text-white"
         )}
       >
-        <div 
+        <Link 
+          href="/"
           className="serif text-xl md:text-2xl font-bold tracking-tighter cursor-pointer" 
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           SOUL RECHARGE
-        </div>
+        </Link>
 
         <div className="hidden md:flex items-center gap-10 text-[10px] uppercase tracking-[0.2em] font-bold">
-          <a href="#problem" className="hover:text-gold transition-colors">The Need</a>
-          <a href="#solution" className="hover:text-gold transition-colors">The Escape</a>
-          <a href="#experience" className="hover:text-gold transition-colors">The Journey</a>
+          <Link href="/#problem" className="hover:text-gold transition-colors">The Need</Link>
+          <Link href="/#solution" className="hover:text-gold transition-colors">The Escape</Link>
+          <Link href="/#experience" className="hover:text-gold transition-colors">The Journey</Link>
+          <Link href="/gallery" className="hover:text-gold transition-colors">Gallery</Link>
           <button 
             onClick={() => setModalOpen(true)}
             className={cn(
@@ -71,9 +73,10 @@ export function Navbar() {
           <X className="w-8 h-8" />
         </button>
         <div className="flex flex-col items-center gap-8 text-2xl serif italic">
-          <a href="#problem" onClick={() => setMobileMenuOpen(false)}>The Need</a>
-          <a href="#solution" onClick={() => setMobileMenuOpen(false)}>The Escape</a>
-          <a href="#experience" onClick={() => setMobileMenuOpen(false)}>The Journey</a>
+          <Link href="/#problem" onClick={() => setMobileMenuOpen(false)}>The Need</Link>
+          <Link href="/#solution" onClick={() => setMobileMenuOpen(false)}>The Escape</Link>
+          <Link href="/#experience" onClick={() => setMobileMenuOpen(false)}>The Journey</Link>
+          <Link href="/gallery" onClick={() => setMobileMenuOpen(false)}>Gallery</Link>
           <button 
             onClick={() => {
               setMobileMenuOpen(false);

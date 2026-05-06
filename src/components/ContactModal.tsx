@@ -29,7 +29,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
         <div className="text-center">
           <h3 className="serif text-3xl md:text-4xl mb-6 italic">Hubungi Kami</h3>
           <p className="text-primary/60 text-sm mb-10 leading-relaxed">
-            Pilih saluran komunikasi yang paling nyaman bagi Anda untuk konsultasi retret privat ini. Tim kami akan segera merespons Anda.
+            Pilih saluran komunikasi yang paling nyaman bagi Anda untuk konsultasi layanan Kembang Jiwa Organizer. Tim kami akan segera merespons Anda.
           </p>
           
           <div className="flex flex-col gap-4">

@@ -13,7 +13,11 @@ export function Footer() {
       <div className="max-w-6xl mx-auto px-8">
         <div className="flex flex-col md:flex-row justify-between items-start gap-16 md:gap-12 mb-20">
           <div className="max-w-xs">
-            <h3 className="serif text-4xl mb-4 font-bold italic">Soul Recharge</h3>
+            <div className="flex items-center gap-3 mb-4">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/logo.jpeg" alt="Soul Recharge Logo" className="w-10 h-10 rounded-full object-cover" />
+              <h3 className="serif text-4xl font-bold italic">Soul Recharge</h3>
+            </div>
             <p className="text-[10px] opacity-40 uppercase tracking-[0.3em] mb-8 font-bold">
               The Clarity Retreat Experience
             </p>

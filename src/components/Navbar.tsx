@@ -30,9 +30,11 @@ export function Navbar() {
       >
         <Link 
           href="/"
-          className="serif text-xl md:text-2xl font-bold tracking-tighter cursor-pointer" 
+          className="flex items-center gap-3 cursor-pointer group" 
         >
-          SOUL RECHARGE
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/logo.jpeg" alt="Soul Recharge Logo" className="w-8 h-8 md:w-10 md:h-10 rounded-full object-cover group-hover:scale-105 transition-transform" />
+          <span className="serif text-xl md:text-2xl font-bold tracking-tighter">SOUL RECHARGE</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-10 text-[10px] uppercase tracking-[0.2em] font-bold">

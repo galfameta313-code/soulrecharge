@@ -34,12 +34,12 @@ export default function GalleryPage() {
           <h2 className="serif text-3xl font-bold italic mb-10 text-center">Galeri Foto</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {images.map((src, idx) => (
-              <div key={idx} className="aspect-square relative overflow-hidden rounded-md group">
+              <div key={idx} className="relative overflow-hidden rounded-md group bg-black/5">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img 
                   src={src} 
                   alt={`Gallery image ${idx + 1}`} 
-                  className="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105"
+                  className="object-contain w-full h-auto transition-transform duration-700 group-hover:scale-105 block"
                 />
                 <div className="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>

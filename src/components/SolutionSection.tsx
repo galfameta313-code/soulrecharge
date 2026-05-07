@@ -9,13 +9,13 @@ export function SolutionSection() {
     <section id="solution" className="relative py-24 md:py-32 overflow-hidden bg-background">
       <div className="max-w-6xl mx-auto px-6 relative flex flex-col md:flex-row items-center gap-16 lg:gap-24">
         <div className="md:w-1/2 relative">
-          <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl">
+          <div className="relative z-10 rounded-sm overflow-hidden shadow-2xl bg-neutral-100">
             <Image 
               src={villaImage?.imageUrl || "/villa.jpeg"} 
               alt="Private Villa Bogor" 
               width={1000}
-              height={1000}
-              className="object-cover aspect-[4/5] md:aspect-square"
+              height={667}
+              className="object-contain w-full h-auto block"
               data-ai-hint="luxury villa"
             />
           </div>

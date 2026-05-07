@@ -36,14 +36,14 @@ export function LocationSection() {
 
         <div className="order-1 md:order-2 relative">
           <div className="rounded-sm overflow-hidden shadow-2xl">
-            <Image 
-              src={mistImage?.imageUrl || "/mist.jpeg"} 
-              alt="Mountain Mist" 
-              width={1000}
-              height={1000}
-              className="object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700 aspect-square"
-              data-ai-hint="mountain mist"
-            />
+              <Image 
+                src={mistImage?.imageUrl || "/mist.jpeg"} 
+                alt="Mountain Mist" 
+                width={1000}
+                height={667}
+                className="object-contain w-full h-auto block grayscale-[30%] hover:grayscale-0 transition-all duration-700"
+                data-ai-hint="mountain mist"
+              />
           </div>
           <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-gold/5 rounded-full blur-3xl -z-10" />
         </div>

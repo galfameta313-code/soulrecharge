@@ -16,7 +16,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src={heroImage?.imageUrl || "/hero.jpeg"}
-          alt="Retreat Background"
+          alt="Event Background"
           fill
           priority
           className="object-cover"
@@ -27,13 +27,13 @@ export function Hero() {
 
       <div className="relative z-10 text-center px-6 max-w-5xl mx-auto animate-fade-in-up">
         <p className="uppercase tracking-[0.5em] text-[10px] md:text-xs mb-8 font-bold opacity-80">
-          Find Direction. Restore Clarity.
+          Rencanakan. Wujudkan. Rayakan.
         </p>
         <h1 className="text-4xl md:text-7xl mb-8 leading-tight italic font-headline">
-          Temukan Kembali Arah Hidup Anda.
+          Wujudkan Acara Impian Anda.
         </h1>
         <p className="text-base md:text-xl font-light mb-12 opacity-90 leading-relaxed max-w-2xl mx-auto">
-          A private retreat experience for professionals & business owners seeking clarity, purpose, and inner alignment.
+          Layanan event organizer profesional untuk merancang dan mewujudkan acara bermakna yang tak terlupakan bagi Anda.
         </p>
         
         <div className="flex flex-col items-center gap-8">
@@ -41,10 +41,10 @@ export function Hero() {
             onClick={() => setModalOpen(true)}
             className="btn-premium"
           >
-            Reserve Your Spot
+            Konsultasi Acara Anda
           </button>
           <p className="serif italic text-lg md:text-xl text-background/80">
-            &ldquo;Bukan sekadar recharge. Ini tentang menemukan arah hidupmu.&rdquo;
+            &ldquo;Bukan sekadar acara. Ini tentang menciptakan momen penuh makna.&rdquo;
           </p>
         </div>
       </div>

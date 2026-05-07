@@ -2,19 +2,19 @@
 export function Testimonials() {
   const reviews = [
     {
-      text: "Awalnya saya hanya ingin istirahat karena burnout parah... tapi saya pulang dengan arah hidup yang jauh lebih jelas. Sesi ini menyelamatkan kesehatan mental dan bisnis saya.",
-      author: "Professional, 34"
+      text: "Tim Kembang Jiwa Organizer benar-benar luar biasa! Acara perusahaan kami berjalan dengan sangat lancar dan penuh kesan berkat perencanaan mereka yang matang.",
+      author: "Manajer HRD, 34"
     },
     {
-      text: "Saya baru sadar selama ini saya hanya sibuk berlari tanpa arah. Retret ini memberi saya keberanian untuk melakukan perubahan besar yang seharusnya saya lakukan sejak lama.",
-      author: "Business Owner, 41"
+      text: "Sangat terbantu dengan profesionalisme tim. Dari konsep hingga hari H, semuanya ditangani dengan sangat baik. Sangat merekomendasikan layanan mereka!",
+      author: "Pemilik Bisnis, 41"
     }
   ];
 
   return (
     <section className="py-24 md:py-32 bg-background">
       <div className="max-w-5xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl italic text-center mb-20 font-headline">What They Felt</h2>
+        <h2 className="text-3xl md:text-4xl italic text-center mb-20 font-headline">Apa Kata Mereka</h2>
         <div className="grid md:grid-cols-2 gap-16">
           {reviews.map((review, i) => (
             <div key={i} className="relative">

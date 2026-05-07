@@ -4,7 +4,7 @@ import { Protection } from '@/components/Protection';
 
 export const metadata: Metadata = {
   title: 'Kembang Jiwa Organizer | Titik Temu Jiwa Berkembang',
-  description: 'A private retreat experience for professionals & business owners seeking clarity, purpose, and inner alignment.',
+  description: 'Layanan event organizer profesional untuk merancang dan mewujudkan acara bermakna yang tak terlupakan bagi Anda.',
 };
 
 export default function RootLayout({

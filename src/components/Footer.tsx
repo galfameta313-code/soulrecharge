@@ -22,7 +22,7 @@ export function Footer() {
               Titik Temu Jiwa Berkembang
             </p>
             <p className="text-sm opacity-60 leading-relaxed">
-              Sebuah perjalanan spiritual yang dirancang khusus untuk memulihkan kejernihan pikiran dan kesadaran diri.
+              Layanan event organizer profesional untuk merancang dan mewujudkan acara bermakna yang tak terlupakan bagi Anda.
             </p>
           </div>
 
@@ -38,10 +38,10 @@ export function Footer() {
           <div className="space-y-6">
             <p className="text-[10px] opacity-40 font-bold tracking-[0.3em] uppercase">Quick Links</p>
             <div className="flex flex-col gap-4 text-sm font-medium">
-              <Link href="/#problem" className="hover:text-gold transition-colors opacity-80">The Need</Link>
-              <Link href="/#solution" className="hover:text-gold transition-colors opacity-80">The Escape</Link>
-              <Link href="/#experience" className="hover:text-gold transition-colors opacity-80">The Journey</Link>
-              <button onClick={() => setModalOpen(true)} className="text-gold font-bold uppercase text-left">Reserve Spot</button>
+              <Link href="/#problem" className="hover:text-gold transition-colors opacity-80">Visi</Link>
+              <Link href="/#solution" className="hover:text-gold transition-colors opacity-80">Solusi Kami</Link>
+              <Link href="/#experience" className="hover:text-gold transition-colors opacity-80">Layanan</Link>
+              <button onClick={() => setModalOpen(true)} className="text-gold font-bold uppercase text-left">Konsultasi Acara</button>
             </div>
           </div>
         </div>

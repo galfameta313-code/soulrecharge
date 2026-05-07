@@ -67,11 +67,11 @@ export function GenAIPromptTool() {
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Sparkles className="w-5 h-5 text-gold" />
-            <span className="text-gold uppercase tracking-[0.2em] text-[10px] font-bold">Preparation Tool</span>
+            <span className="text-gold uppercase tracking-[0.2em] text-[10px] font-bold">Event Concept Tool</span>
           </div>
-          <h2 className="text-3xl md:text-5xl italic font-headline mb-6">Clarify Your Intentions</h2>
+          <h2 className="text-3xl md:text-5xl italic font-headline mb-6">Wujudkan Konsep Acara Anda</h2>
           <p className="text-primary/60 max-w-2xl mx-auto">
-            Gunakan asisten refleksi kami untuk mendapatkan panduan pertanyaan personal sebelum retret dimulai.
+            Gunakan asisten AI kami untuk mengeksplorasi ide dan konsep unik sebelum merencanakan acara Anda bersama tim kami.
           </p>
         </div>
 
@@ -79,24 +79,24 @@ export function GenAIPromptTool() {
           <div className="md:col-span-2">
             <Card className="glass-card border-gold/10 shadow-xl overflow-hidden">
               <CardHeader className="bg-primary/5 border-b border-gold/10">
-                <CardTitle className="serif text-xl">Self-Discovery Input</CardTitle>
-                <CardDescription>Beritahu kami sedikit tentang apa yang sedang Anda hadapi.</CardDescription>
+                <CardTitle className="serif text-xl">Inspirasi Acara</CardTitle>
+                <CardDescription>Ceritakan sekilas tentang acara yang ingin Anda wujudkan.</CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="space-y-2">
-                    <label className="text-xs font-bold uppercase tracking-widest text-primary/60">Tantangan Saat Ini</label>
+                    <label className="text-xs font-bold uppercase tracking-widest text-primary/60">Tujuan Acara</label>
                     <Textarea 
-                      placeholder="Contoh: Merasa burnout di bisnis, kehilangan motivasi tim..." 
+                      placeholder="Contoh: Peluncuran produk baru, perayaan ulang tahun perusahaan..." 
                       className="bg-white/50 border-gold/20 min-h-[120px]"
                       value={challenges}
                       onChange={(e) => setChallenges(e.target.value)}
                     />
                   </div>
                   <div className="space-y-2">
-                    <label className="text-xs font-bold uppercase tracking-widest text-primary/60">Aspirasi Anda</label>
+                    <label className="text-xs font-bold uppercase tracking-widest text-primary/60">Tema atau Nuansa Harapan</label>
                     <Textarea 
-                      placeholder="Contoh: Ingin menemukan kembali passion, mencari keseimbangan..." 
+                      placeholder="Contoh: Menginginkan suasana elegan, outdoor yang santai, atau tema futuristik..." 
                       className="bg-white/50 border-gold/20 min-h-[120px]"
                       value={aspirations}
                       onChange={(e) => setAspirations(e.target.value)}
@@ -111,7 +111,7 @@ export function GenAIPromptTool() {
                       <Loader2 className="w-4 h-4 animate-spin" />
                     ) : (
                       <>
-                        Generate Prompts
+                        Hasilkan Ide Acara
                         <Send className="w-3 h-3" />
                       </>
                     )}
@@ -128,7 +128,7 @@ export function GenAIPromptTool() {
                   <Sparkles className="w-8 h-8 text-gold" />
                 </div>
                 <h3 className="serif text-2xl mb-2 text-primary/40">Hasil akan muncul di sini</h3>
-                <p className="text-primary/30 max-w-xs">Isi formulir di samping untuk mendapatkan panduan refleksi personal Anda.</p>
+                <p className="text-primary/30 max-w-xs">Isi formulir di samping untuk mendapatkan panduan konsep acara Anda.</p>
               </div>
             )}
 
@@ -139,14 +139,14 @@ export function GenAIPromptTool() {
                   <div className="w-2 h-2 rounded-full bg-gold animate-bounce [animation-delay:-0.15s]"></div>
                   <div className="w-2 h-2 rounded-full bg-gold animate-bounce"></div>
                 </div>
-                <p className="serif italic text-xl text-primary/60">Menyusun pertanyaan untuk jiwa Anda...</p>
+                <p className="serif italic text-xl text-primary/60">Menyusun inspirasi untuk acara Anda...</p>
               </div>
             )}
 
             {result && !loading && (
               <div className="space-y-8 animate-fade-in-up">
                 <div className="space-y-6">
-                  <h3 className="serif text-3xl border-b border-gold/20 pb-4">Reflection Questions</h3>
+                  <h3 className="serif text-3xl border-b border-gold/20 pb-4">Saran Konsep Acara</h3>
                   <div className="grid gap-4">
                     {result.reflectionQuestions.map((q, i) => (
                       <div key={i} className="bg-white/40 p-5 rounded-md border border-gold/10 hover:border-gold/30 transition-all">
@@ -157,7 +157,7 @@ export function GenAIPromptTool() {
                 </div>
                 
                 <div className="space-y-6">
-                  <h3 className="serif text-3xl border-b border-gold/20 pb-4">Journaling Prompts</h3>
+                  <h3 className="serif text-3xl border-b border-gold/20 pb-4">Rekomendasi Aktivitas</h3>
                   <div className="grid gap-4">
                     {result.journalingPrompts.map((p, i) => (
                       <div key={i} className="bg-primary/5 p-5 rounded-md border border-gold/10 hover:border-gold/30 transition-all">

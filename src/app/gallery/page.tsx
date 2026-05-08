@@ -11,7 +11,7 @@ const images = [
   { src: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop", caption: "Meditasi Pagi" },
   { src: "https://images.unsplash.com/photo-1536623975707-c4b3b2af565d?q=80&w=1000&auto=format&fit=crop", caption: "Alam & Kesadaran" },
   { src: "https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?q=80&w=1000&auto=format&fit=crop", caption: "Perjalanan Batin" },
-  { src: "https://images.unsplash.com/photo-1519834785169-98be25ce9e8c?q=80&w=1000&auto=format&fit=crop", caption: "Pemulihan Diri" },
+  { src: "https://images.unsplash.com/photo-1588286840104-8957b019727f?q=80&w=1000&auto=format&fit=crop", caption: "Pemulihan Diri" },
 ];
 
 const videos = [

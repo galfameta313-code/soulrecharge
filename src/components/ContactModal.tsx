@@ -34,7 +34,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           
           <div className="flex flex-col gap-4">
             <a 
-              href="https://wa.me/6282111594146?text=Halo%20Tim%20Kembang%20Jiwa%20Organizer%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20mengenai%20Titik%20Temu%20Jiwa%20Berkembang." 
+              href="https://wa.me/628131399366?text=Halo%20Tim%20Kembang%20Jiwa%20Organizer%2C%20saya%20tertarik%20untuk%20mengetahui%20lebih%20lanjut%20mengenai%20Titik%20Temu%20Jiwa%20Berkembang." 
               target="_blank" 
               className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 font-bold uppercase text-[10px] tracking-[0.2em] rounded-sm hover:brightness-110 transition-all shadow-md"
             >

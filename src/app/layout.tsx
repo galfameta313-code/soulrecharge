@@ -1,6 +1,7 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Protection } from '@/components/Protection';
+import { MusicPlayer } from '@/components/MusicPlayer';
 
 export const metadata: Metadata = {
   title: 'Kembang Jiwa Organizer | Titik Temu Jiwa Berkembang',
@@ -21,8 +22,10 @@ export default function RootLayout({
       </head>
       <body className="font-body antialiased">
         <Protection />
+        <MusicPlayer />
         {children}
       </body>
     </html>
   );
 }
+

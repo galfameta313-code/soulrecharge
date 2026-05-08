@@ -7,6 +7,8 @@ import { useState, useEffect, useRef } from "react";
 const images = [
   { src: "/Gallery/Kegiatan 1.jpeg", caption: "Kegiatan Retreat" },
   { src: "/Gallery/kegiatan 2.png", caption: "Momen Kebersamaan" },
+  { src: "/Gallery/kegiatan 3.jpeg", caption: "Kegiatan Bersama" },
+  { src: "/Gallery/kegiatan 4.jpeg", caption: "Semangat Peserta" },
   { src: "https://images.unsplash.com/photo-1518241353330-0f7941c2d9b5?q=80&w=1000&auto=format&fit=crop", caption: "Ketenangan Jiwa" },
   { src: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?q=80&w=1000&auto=format&fit=crop", caption: "Meditasi Pagi" },
   { src: "https://images.unsplash.com/photo-1536623975707-c4b3b2af565d?q=80&w=1000&auto=format&fit=crop", caption: "Alam & Kesadaran" },

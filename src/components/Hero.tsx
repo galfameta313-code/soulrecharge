@@ -12,7 +12,7 @@ export function Hero() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
 
   return (
-    <header className="relative h-screen min-h-[700px] flex items-center justify-center text-white overflow-hidden">
+    <header className="relative h-screen min-h-[700px] flex flex-col items-center justify-end pb-32 md:pb-48 text-white overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src={heroImage?.imageUrl || "/hero.jpeg"}
